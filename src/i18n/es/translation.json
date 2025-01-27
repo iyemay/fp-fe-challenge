@@ -5,5 +5,15 @@
     "part2": "😉"
   },
   "userMessagesUnread_one": "Tienes {{count}} mensajes leídos",
-  "userMessagesUnread_other": "Tienes {{count}} mensajes sin leer"
+  "userMessagesUnread_other": "Tienes {{count}} mensajes sin leer",
+  "transaction": {
+    "sender": "Número de WhatsApp del remitente",
+    "receiver": "Número de WhatsApp del destinatario",
+    "amount_send": "Monto enviado",
+    "amount_received": "Monto recibido",
+    "exchange_rate": "Tasa de cambio aplicada",
+    "transaction_status": "Estado de la transacción",
+    "date": "Fecha y hora de la transacción",
+    "payment_method": "Método de pago"
+  }
 }

@@ -13,6 +13,6 @@ i18n.use(initReactI18next).init({
     },
     es: {
       translation: esTranslation,
-    }
+    },
   },
 });
