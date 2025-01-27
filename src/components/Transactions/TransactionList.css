@@ -1,0 +1,9 @@
+.ant-col > * {
+  width: 100%;
+}
+
+@media screen and (max-width: 786px) {
+  .ant-col {
+    margin-bottom: 16px;
+  }
+}

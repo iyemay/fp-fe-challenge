@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Row } from 'antd';
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
@@ -9,10 +10,12 @@ const LanguageSwitcher: React.FC = () => {
   };
 
   return (
-    <div>
+    <Row
+      style={{ display: 'flex', justifyContent: 'end', marginBottom: '20px' }}
+    >
       <button onClick={() => changeLanguage('en')}>English</button>
       <button onClick={() => changeLanguage('es')}>Español</button>
-    </div>
+    </Row>
   );
 };
 
