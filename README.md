@@ -1,6 +1,32 @@
-# Getting Started with Create React App
+# Félix Pago Frontend Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Develop a web-based dashboard to enable users to efficiently track and manage remittance transactions processed via WhatsApp. The application must prioritize usability, performance, and scalability while adhering to a 4-hour development constraint.
+
+## Run project in local
+
+Before running any scripts, make sure to install the project dependencies:
+
+```
+yarn install
+```
+
+```
+yarn start
+```
+
+
+## Run project with Docker
+
+1. Open Docker application in your computer
+2. Run the following commands in the terminal
+
+```
+docker build -t fp-fe-challenge .
+```
+
+```
+docker run -d --name fp-app -p 3001:3000 fp-fe-challenge
+```
 
 ## Available Scripts
 
@@ -14,10 +40,25 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+
+### `yarn lint`
+
+Runs ESLint to check and enforce code quality and style rules.
+
+
+### `yarn format`
+
+Formats the code using Prettier for consistency and readability.
+
+### `jest-clear`
+
+Clears Jest's cache to avoid issues with outdated or cached test data.
 
 ### `yarn build`
 
