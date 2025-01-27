@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 const TransactionList = () => {
   const { t } = useTranslation();
-  
+
   const { data, isLoading, isError } = useTransactionsData();
 
   const [searchQuery, setSearchQuery] = useState('');

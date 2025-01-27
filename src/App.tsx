@@ -13,8 +13,8 @@ function App() {
   return (
     <div className="App" style={{ margin: '16px 16px 0 16px' }}>
       <QueryClientProvider client={queryClient}>
-        <LanguageSwitcher/>
-        <TransactionList/>
+        <LanguageSwitcher />
+        <TransactionList />
       </QueryClientProvider>
     </div>
   );
