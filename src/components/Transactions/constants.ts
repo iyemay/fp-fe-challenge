@@ -1,3 +1,6 @@
+import TransactionModal from '../Modal/Modal';
+import React from 'react';
+
 export const transactionListColumns = [
   {
     title: 'Transaction ID',
@@ -44,10 +47,21 @@ export const transactionListColumns = [
     title: 'Date and time of transfer',
     dataIndex: 'date',
     key: 'date',
+    render: (text: number, record: Transaction) => {
+      return record.date.toISOString();
+    },
   },
   {
     title: 'Payment method',
     dataIndex: 'payment_method',
     key: 'payment_method',
+  },
+  {
+    title: 'Details',
+    dataIndex: 'id',
+    key: 'id',
+    render: (_: string, record: Transaction) => {
+      return React.createElement(TransactionModal, { transaction: record });
+    },
   },
 ];

@@ -18,11 +18,13 @@ interface TransactionAPIResponse {
   amount_sent: number;
   amount_received: number;
   exchange_rate: number;
+  fees: number;
   currency_sent: Currency;
   currency_received: Currency;
   status: TransactionStatus;
   payment_method: TransactionPaymentMethod;
   date: Date;
+  openModal: () => void;
 }
 
 interface Transaction extends TransactionAPIResponse {
