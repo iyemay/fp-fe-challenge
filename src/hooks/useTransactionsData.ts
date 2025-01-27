@@ -12,6 +12,7 @@ export const useTransactionsData = () => {
       amount_sent: transaction.amount_sent,
       amount_received: transaction.amount_received,
       exchange_rate: transaction.exchange_rate,
+      fees: transaction.fees,
       currency_sent: transaction.currency_sent,
       currency_received: transaction.currency_received,
       status: transaction.status,
