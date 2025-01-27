@@ -4,8 +4,11 @@ import TableWithSearchAndPagination from '../TableWithPagination/TableWithPagina
 import TransactionSearchBar from './TransactionSearchBar';
 import { transactionListColumns } from './constants';
 import { useDebounce } from '../../hooks/useDebounce';
+import { useTranslation } from 'react-i18next';
 
 const TransactionList = () => {
+  const { t } = useTranslation();
+  
   const { data, isLoading, isError } = useTransactionsData();
 
   const [searchQuery, setSearchQuery] = useState('');
@@ -75,7 +78,7 @@ const TransactionList = () => {
 
       <TableWithSearchAndPagination<Transaction>
         data={filteredData}
-        columns={transactionListColumns}
+        columns={transactionListColumns(t)}
       />
     </div>
   );

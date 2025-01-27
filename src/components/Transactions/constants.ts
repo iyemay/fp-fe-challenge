@@ -1,24 +1,26 @@
 import TransactionModal from '../Modal/Modal';
 import React from 'react';
 
-export const transactionListColumns = [
+import { TFunction } from 'i18next';
+
+export const transactionListColumns = (t: TFunction) => [
   {
-    title: 'Transaction ID',
+    title: t('transaction.table.id'),
     dataIndex: 'id',
     key: 'id',
   },
   {
-    title: "Sender's WhatsApp number",
+    title: t('transaction.table.sender'),
     dataIndex: 'sender_whatsapp',
     key: 'sender_whatsapp',
   },
   {
-    title: "Receiver's WhatsApp number",
+    title: t('transaction.table.receiver'),
     dataIndex: 'receiver_whatsapp',
     key: 'receiver_whatsapp',
   },
   {
-    title: 'Amount Sent',
+    title: t('transaction.table.amount_send'),
     dataIndex: 'amount_sent',
     key: 'amount_sent',
     render: (text: number, record: Transaction) => {
@@ -26,7 +28,7 @@ export const transactionListColumns = [
     },
   },
   {
-    title: 'Amount received',
+    title: t('transaction.table.amount_received'),
     dataIndex: 'amount_received',
     key: 'amount_received',
     render: (text: number, record: Transaction) => {
@@ -34,17 +36,17 @@ export const transactionListColumns = [
     },
   },
   {
-    title: 'Exchange rate applied',
+    title: t('transaction.table.exchange_rate'),
     dataIndex: 'exchange_rate',
     key: 'exchange_rate',
   },
   {
-    title: 'Transaction status',
+    title: t('transaction.table.transaction_status'),
     dataIndex: 'status',
     key: 'status',
   },
   {
-    title: 'Date and time of transfer',
+    title: t('transaction.table.date'),
     dataIndex: 'date',
     key: 'date',
     render: (text: number, record: Transaction) => {
@@ -52,12 +54,12 @@ export const transactionListColumns = [
     },
   },
   {
-    title: 'Payment method',
+    title: t('transaction.table.payment_method'),
     dataIndex: 'payment_method',
     key: 'payment_method',
   },
   {
-    title: 'Details',
+    title: '',
     dataIndex: 'id',
     key: 'id',
     render: (_: string, record: Transaction) => {

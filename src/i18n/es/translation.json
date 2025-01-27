@@ -1,19 +1,45 @@
 {
-  "title": "Bienvenido {{name}}, a el uso de react-i18next con React fuertemente tipado",
-  "description": {
-    "part1": "Este es un ejemplo sencillo.",
-    "part2": "😉"
+  "searchBar": {
+    "search": "Buscar...",
+    "statusFilter": "Filtrar por Estado",
+    "startDate": "Fecha de inicio",
+    "endDate": "Fecha de fin"
   },
-  "userMessagesUnread_one": "Tienes {{count}} mensajes leídos",
-  "userMessagesUnread_other": "Tienes {{count}} mensajes sin leer",
   "transaction": {
-    "sender": "Número de WhatsApp del remitente",
-    "receiver": "Número de WhatsApp del destinatario",
-    "amount_send": "Monto enviado",
-    "amount_received": "Monto recibido",
-    "exchange_rate": "Tasa de cambio aplicada",
-    "transaction_status": "Estado de la transacción",
-    "date": "Fecha y hora de la transacción",
-    "payment_method": "Método de pago"
+    "table": {
+      "id": "ID",
+      "sender": "WhatsApp remitente",
+      "receiver": "WhatsApp destinatario",
+      "amount_send": "Enviado",
+      "amount_received": "Recibido",
+      "exchange_rate": "Tasa",
+      "transaction_status": "Estado",
+      "date": "Fecha y hora",
+      "payment_method": "Método de pago"
+    },
+    "modal": {
+      "title": "ID de Transacción",
+      "sender_and_receiver": "Detalles del Remitente y destinatario",
+      "sender": "Número de WhatsApp del remitente",
+      "receiver": "Número de WhatsApp del destinatario",
+      "transfer_breakdown": "Detalles de la transacción",
+      "amount_send": "Monto enviado",
+      "fees": "Comisiones",
+      "exchange_rate": "Exchange rate",
+      "amount_received": "Monto recibido",
+      "transaction_status": "Estado de la transacción",
+      "details": "Ver detalles"
+    },
+    "statusEnum": {
+      "pending": "Pendiente",
+      "in_progress": "En Progreso",
+      "completed": "Completada",
+      "failed": "Fallida"
+    },
+    "paymentMethodEnum": {
+      "bank_deposit": "Depósito Bancario",
+      "cash_pickup": "Recogida en efectivo",
+      "mobile_wallet": "Billetera Móvil"
+    }
   }
 }

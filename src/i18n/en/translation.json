@@ -1,19 +1,46 @@
 {
-  "title": "Welcome {{name}}, to react using react-i18next fully type-safe",
-  "description": {
-    "part1": "This is a simple example.",
-    "part2": "😉"
+  "searchBar": {
+    "search": "Search...",
+    "statusFilter": "Filter by Status",
+    "startDate": "Start date",
+    "endDate": "End date"
   },
-  "userMessagesUnread_one": "You have {{count}} unread message.",
-  "userMessagesUnread_other": "You have {{count}} unread messages.",
   "transaction": {
-    "sender": "Sender's WhatsApp number",
-    "receiver": "Receiver's WhatsApp number",
-    "amount_send": "Amount sent",
-    "amount_received": "Amount received",
-    "exchange_rate": "Exchange rate applied",
-    "transaction_status": "Transaction status",
-    "date": "Date and time of transfer",
-    "payment_method": "Payment method"
+    "table": {
+      "id": "ID",
+      "sender": "Sender's WhatsApp",
+      "receiver": "Receiver's WhatsApp",
+      "amount_send": "Sent",
+      "amount_received": "Received",
+      "exchange_rate": "Rate",
+      "transaction_status": "Status",
+      "date": "Date and time",
+      "payment_method": "Payment method"
+    },
+    "modal": {
+      "id": "Transaction ID",
+      "title": "Transaction ID",
+      "sender_and_receiver": "Sender and receiver details",
+      "sender": "Sender's WhatsApp number",
+      "receiver": "Receiver's WhatsApp number",
+      "transfer_breakdown": "Breakdown of the transfer",
+      "amount_send": "Amount sent",
+      "fees": "Fees",
+      "exchange_rate": "Exchange rate",
+      "amount_received": "Amount received",
+      "transaction_status": "Transaction status",
+      "details": "View details"
+    },
+    "statusEnum": {
+      "pending": "Pending",
+      "in_progress": "In Progress",
+      "completed": "Completed",
+      "failed": "Failed"
+    },
+    "paymentMethodEnum": {
+      "bank_deposit": "Bank deposit",
+      "cash_pickup": "Cash pickup",
+      "mobile_wallet": "Mobile wallet"
+    }
   }
 }
