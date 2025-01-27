@@ -4,20 +4,16 @@ import {Trans, useTranslation} from "react-i18next";
 import './App.css';
 
 import './i18n/config';
+import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
 
 function App() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const count = 3;
-  
-  const switchLanguage = (language: string) => {
-    i18n.changeLanguage(language);
-  };
   
   return (
     <div className="App">
       
-      <button onClick={() => switchLanguage('en')}>English</button>
-      <button onClick={() => switchLanguage('es')}>Español</button>
+      <LanguageSwitcher />
       
       <p>{t('title', {name: 'John'})}</p>
       <p>{t('description.part1')}</p>
